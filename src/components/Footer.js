@@ -8,33 +8,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import {
-  createTheme,
-} from "@material-ui/core/styles";
 
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#082032",
-    },
-    secondary: {
-      main: "#334756",
-    },
-  },
-  typography: {
-    fontFamily: ["Goldman"],
-    h4: {
-      fontWeight: 400,
-      fontSize: 28,
-      lineHeight: "2rem",
-    },
-    h5: {
-      fontWeight: 100,
-      lineHeight: "2rem",
-    },
-  },
-});
 
 function Footer() {
   return (

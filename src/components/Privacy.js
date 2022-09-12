@@ -61,7 +61,6 @@ const styles = makeStyles({
     width: "60%",
     height: "50%",
     borderRadius: "10%",
-    display: "flex",
     justifyContent: "center",
     alignItems: "center",
     borderWidth: "5px",
@@ -96,7 +95,6 @@ const styles = makeStyles({
     marginBottom: "8%",
     marginLeft: "5%",
     marginRight: "5%",
-    alignItems: "center",
     textAlign: "center",
   },
 });

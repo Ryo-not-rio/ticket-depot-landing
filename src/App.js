@@ -68,7 +68,6 @@ const styles = makeStyles({
     width: "60%",
     height: "50%",
     borderRadius: "10%",
-    display: "flex",
     justifyContent: "center",
     alignItems: "center",
     borderWidth: "5px",
@@ -103,7 +102,6 @@ const styles = makeStyles({
     marginBottom: "8%",
     marginLeft: "5%",
     marginRight: "5%",
-    alignItems: "center",
     textAlign: "center",
   },
 });
@@ -173,6 +171,7 @@ function App() {
             <img
               style={{ width: "70%", marginTop: "8%", marginBottom: "8%" }}
               src={AppSlightBorders}
+              alt=""
             />
           </div>
         </div>
