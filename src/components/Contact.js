@@ -1,22 +1,17 @@
 import React from "react";
-import "./App.css";
+import "../App.css";
 import {
   createTheme,
   ThemeProvider,
   makeStyles,
 } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
-import Icon from "@mdi/react";
-import { mdiCartOutline } from "@mdi/js";
-import { mdiCashMultiple } from "@mdi/js";
-import { mdiAlertCircle } from "@mdi/js";
-import { mdiCheckboxBlankCircleOutline } from "@mdi/js";
-import { mdiCheckDecagram } from "@mdi/js";
 
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import DownloadButtons from "./components/DownloadButtons";
-import AppSlightBorders from "./AppSlightBorders.png";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import DownloadButtons from "../components/DownloadButtons";
+import AppSlightBorders from "../AppSlightBorders.png";
+import { Typography } from "@material-ui/core";
+
 
 const theme = createTheme({
   palette: {
@@ -54,12 +49,6 @@ const styles = makeStyles({
     margin: "0 1rem",
     backgroundColor: "#e3e3e3",
   },
-  hr1: {
-    display: "flex",
-    margin: "8% 25%",
-    backgroundColor: "#0d9116",
-    borderColor: "#0d9116",
-  },
 
   applogobox: {
     display: "flex",
@@ -77,24 +66,17 @@ const styles = makeStyles({
     marginTop: "8%",
     marginBottom: "8%",
   },
-  logo: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "70%",
-    marginTop: "8%",
-    marginBottom: "8%",
+  li: {
+    textAlign: "center",
+    textDecoration: "none",
+    listStyle: "none",
+    color: "#e0c99d",
   },
   link: {
     color: "#e3e3e3",
     textDecoration: "none",
   },
-  li: {
-    textAlign: "center",
-    textDecoration: "none",
-    listStyle: "none",
-    color: "#e3e3e3",
-  },
+  typography: { color: "#e3e3e3" },
   textbox: {
     display: "flex",
     justifyContent: "center",
@@ -108,55 +90,34 @@ const styles = makeStyles({
   },
 });
 
-function App() {
+function Contact() {
   const classes = styles();
   return (
     <div className={classes.app}>
       <ThemeProvider theme={theme}>
         <NavBar />
         <hr className={classes.hr} />
-        <div
-          className={classes.textbox}
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          <Icon path={mdiCartOutline} color={"#e0c99d"} size={"10%"} />
-          <Typography className={classes.li} variant="h4">
-            Buy Tickets
-          </Typography>
-        </div>
-        <hr className={classes.hr1} />
-        <div
-          className={classes.textbox}
-          style={{ display: "flex", flexDirection: "column" }}
-        >
-          <Icon path={mdiCashMultiple} color={"#e0c99d"} size={"10%"} />
-          <Typography className={classes.li} variant="h4">
-            Sell Tickets
-          </Typography>
-        </div>
-        <hr className={classes.hr1} />
-        <div
-          className={classes.textbox}
-          style={{ display: "flex", flexDirection: "row", marginTop: "10%" }}
-        >
-          <Icon path={mdiAlertCircle} color={"#e65e5e"} size={"5%"} />
-          <Icon
-            path={mdiCheckboxBlankCircleOutline}
-            color={"#0d9116"}
-            size={"5%"}
-          />
-          <Icon path={mdiCheckDecagram} color={"#4db4eb"} size={"5%"} />
-        </div>
-        <div>
+        <div className={classes.textbox}>
           <Typography
-            className={classes.li}
-            style={{ marginTop: "-6%" }}
+            style={{ color: "#e0c99d" }}
             variant="h4"
+            className={classes.typography}
           >
-            User Rating System
+            Contact
           </Typography>
         </div>
-        <hr className={classes.hr1} />
+        <div className={classes.textbox}>
+          <Typography className={classes.typography}>
+            Email: info@ticketdepot.co.uk
+            <br />
+            <br />
+            Instagram: @ticketdepot
+            <br />
+            <br />
+            Facebook: Ticket Depot
+          </Typography>
+        </div>
+
         <DownloadButtons />
         <div
           style={{
@@ -176,6 +137,7 @@ function App() {
             />
           </div>
         </div>
+
         <hr className={classes.hr} />
         <div
           style={{
@@ -193,4 +155,4 @@ function App() {
   );
 }
 
-export default App;
+export default Contact;
