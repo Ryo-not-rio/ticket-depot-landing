@@ -65,7 +65,7 @@ function NavBar() {
           marginBottom: "-3.5rem",
         }}
       >
-        <img className={classes.logo} src={LogoFinalnoBground} />
+        <img className={classes.logo} src={LogoFinalnoBground} alt=""/>
       </div>
       <nav className={classes.nav}>
         <ul className={classes.ul}>
