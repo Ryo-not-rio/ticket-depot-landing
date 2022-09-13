@@ -9,7 +9,6 @@ import {
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import DownloadButtons from "../components/DownloadButtons";
-import AppSlightBorders from "../AppSlightBorders.png";
 import { Typography } from "@material-ui/core";
 
 const theme = createTheme({
