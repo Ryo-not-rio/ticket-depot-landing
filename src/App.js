@@ -111,6 +111,7 @@ const styles = makeStyles({
     alignItems: "center",
     padding: 0,
     margin: 0,
+    backgroundColor: "red",
   },
 });
 
@@ -152,7 +153,7 @@ function App() {
             className={classes.icon}
           />
           <Typography className={classes.li} variant="h4">
-            Buy Tickets m
+            Buy Tickets f
           </Typography>
         </div>
         <hr className={classes.hr1} />
