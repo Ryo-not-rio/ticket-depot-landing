@@ -111,7 +111,6 @@ const styles = makeStyles({
     alignItems: "center",
     padding: 0,
     margin: 0,
-    backgroundColor: "red",
     height: "5%",
   },
 });
@@ -163,7 +162,7 @@ function App() {
             />
           </div>
           <Typography className={classes.li} variant="h4">
-            Buy Tickets j
+            Buy Tickets
           </Typography>
         </div>
         <hr className={classes.hr1} />
