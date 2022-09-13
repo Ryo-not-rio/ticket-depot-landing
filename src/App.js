@@ -144,7 +144,7 @@ function App() {
         <hr className={classes.hr1} />
         <div
           className={classes.textbox}
-          style={{ display: "flex", flexDirection: "column" }}
+          style={{ display: "flex", flexDirection: "column", flex: 1 }}
         >
           <div
             style={{
@@ -168,7 +168,7 @@ function App() {
         <hr className={classes.hr1} />
         <div
           className={classes.textbox}
-          style={{ display: "flex", flexDirection: "column" }}
+          style={{ display: "flex", flexDirection: "column", flex: 1 }}
         >
           <div
             style={{
@@ -192,7 +192,7 @@ function App() {
         <hr className={classes.hr1} />
         <div
           className={classes.textbox}
-          style={{ display: "flex", flexDirection: "column" }}
+          style={{ display: "flex", flexDirection: "column", flex: 1 }}
         >
           <div
             style={{
