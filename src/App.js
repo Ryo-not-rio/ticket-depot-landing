@@ -138,9 +138,14 @@ function App() {
           className={classes.textbox}
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <Icon path={mdiCartOutline} color={"#e0c99d"} size={"10%"} />
+          <Icon
+            path={mdiCartOutline}
+            color={"#e0c99d"}
+            size={"10%"}
+            style={{ padding: 0, margin: 0 }}
+          />
           <Typography className={classes.li} variant="h4">
-            Buy Tickets
+            Buy Tickets h
           </Typography>
         </div>
         <hr className={classes.hr1} />
@@ -148,7 +153,12 @@ function App() {
           className={classes.textbox}
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <Icon path={mdiCashMultiple} color={"#e0c99d"} size={"10%"} />
+          <Icon
+            path={mdiCashMultiple}
+            color={"#e0c99d"}
+            size={"10%"}
+            style={{ padding: 0, margin: 0 }}
+          />
           <Typography className={classes.li} variant="h4">
             Sell Tickets
           </Typography>
