@@ -105,6 +105,13 @@ const styles = makeStyles({
     marginRight: "5%",
     textAlign: "center",
   },
+  icon: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 0,
+    margin: 0,
+  },
 });
 
 function App() {
@@ -142,10 +149,10 @@ function App() {
             path={mdiCartOutline}
             color={"#e0c99d"}
             size={"10%"}
-            style={{ padding: 0, margin: 0 }}
+            className={classes.icon}
           />
           <Typography className={classes.li} variant="h4">
-            Buy Tickets h
+            Buy Tickets m
           </Typography>
         </div>
         <hr className={classes.hr1} />
@@ -157,7 +164,7 @@ function App() {
             path={mdiCashMultiple}
             color={"#e0c99d"}
             size={"10%"}
-            style={{ padding: 0, margin: 0 }}
+            className={classes.icon}
           />
           <Typography className={classes.li} variant="h4">
             Sell Tickets
