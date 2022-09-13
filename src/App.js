@@ -112,7 +112,7 @@ const styles = makeStyles({
     padding: 0,
     margin: 0,
     backgroundColor: "red",
-    height:'5%'
+    height: "5%",
   },
 });
 
@@ -147,14 +147,23 @@ function App() {
           className={classes.textbox}
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <Icon
-            path={mdiCartOutline}
-            color={"#e0c99d"}
-            size={"10%"}
-            className={classes.icon}
-          />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Icon
+              path={mdiCartOutline}
+              color={"#e0c99d"}
+              size={"10%"}
+              className={classes.icon}
+            />
+          </div>
           <Typography className={classes.li} variant="h4">
-            Buy Tickets g
+            Buy Tickets j
           </Typography>
         </div>
         <hr className={classes.hr1} />
@@ -162,12 +171,21 @@ function App() {
           className={classes.textbox}
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <Icon
-            path={mdiCashMultiple}
-            color={"#e0c99d"}
-            size={"10%"}
-            className={classes.icon}
-          />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Icon
+              path={mdiCashMultiple}
+              color={"#e0c99d"}
+              size={"10%"}
+              className={classes.icon}
+            />
+          </div>
           <Typography className={classes.li} variant="h4">
             Sell Tickets
           </Typography>
