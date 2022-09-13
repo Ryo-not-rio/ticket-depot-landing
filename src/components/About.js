@@ -112,11 +112,11 @@ const About = () => {
 
         <div className={classes.textbox}>
           <Typography className={classes.typography}>
-            We provide a scam-proof secondary marketplace for small scale,
-            ticketed events.
+            We aim to provide a scam-proof secondary marketplace for small
+            scale, ticketed events.
             <hr className={classes.hr1} />
-            By employing a multi-layered verification system, we ensure the
-            ticket you buy is valid.
+            By employing a multi-layered verification system, we try to ensure
+            the ticket you buy is valid.
           </Typography>
         </div>
         <hr className={classes.hr1} />
