@@ -47,16 +47,17 @@ const styles = makeStyles({
     position: "absolute",
     width: "100%",
     height: "100%",
+    background: "linear-gradient(0deg, rgba(1,100,120,0.5),transparent)",
     backgroundColor: "#082032",
   },
   hr: {
     display: "flex",
-    margin: "0 1rem",
+    margin: "0 0",
     backgroundColor: "#e3e3e3",
   },
   hr1: {
     display: "flex",
-    margin: "8% 25%",
+    margin: "5% 35%",
     backgroundColor: "#0d9116",
     borderColor: "#0d9116",
   },
@@ -98,8 +99,8 @@ const styles = makeStyles({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: "8%",
-    marginBottom: "8%",
+    marginTop: "5%",
+    marginBottom: "5%",
     marginLeft: "5%",
     marginRight: "5%",
     textAlign: "center",
@@ -113,6 +114,26 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar />
         <hr className={classes.hr} />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginRight: "5%",
+            marginLeft: "5%",
+            marginTop: "8%",
+            marginBottom: "8%",
+          }}
+        >
+          <div className={classes.applogobox}>
+            <img
+              style={{ width: "70%", marginTop: "8%", marginBottom: "8%" }}
+              src={AppSlightBorders}
+              alt=""
+            />
+          </div>
+        </div>
+        <hr className={classes.hr1} />
         <div
           className={classes.textbox}
           style={{ display: "flex", flexDirection: "column" }}
@@ -135,46 +156,32 @@ function App() {
         <hr className={classes.hr1} />
         <div
           className={classes.textbox}
-          style={{ display: "flex", flexDirection: "row", marginTop: "10%" }}
+          style={{ display: "flex", flexDirection: "column" }}
         >
-          <Icon path={mdiAlertCircle} color={"#e65e5e"} size={"5%"} />
-          <Icon
-            path={mdiCheckboxBlankCircleOutline}
-            color={"#0d9116"}
-            size={"5%"}
-          />
-          <Icon path={mdiCheckDecagram} color={"#4db4eb"} size={"5%"} />
-        </div>
-        <div>
-          <Typography
-            className={classes.li}
-            style={{ marginTop: "-6%" }}
-            variant="h4"
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
           >
+            <Icon path={mdiAlertCircle} color={"#e65e5e"} size={"7%"} />
+            <Icon
+              path={mdiCheckboxBlankCircleOutline}
+              color={"#0d9116"}
+              size={"7%"}
+            />
+            <Icon path={mdiCheckDecagram} color={"#4db4eb"} size={"7%"} />
+          </div>
+          <Typography className={classes.li} variant="h4">
             User Rating System
           </Typography>
         </div>
+
         <hr className={classes.hr1} />
         <DownloadButtons />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginRight: "5%",
-            marginLeft: "5%",
-            marginTop: "8%",
-            marginBottom: "8%",
-          }}
-        >
-          <div className={classes.applogobox}>
-            <img
-              style={{ width: "70%", marginTop: "8%", marginBottom: "8%" }}
-              src={AppSlightBorders}
-              alt=""
-            />
-          </div>
-        </div>
+
         <hr className={classes.hr} />
         <div
           style={{

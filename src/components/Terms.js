@@ -10,7 +10,6 @@ import { Typography } from "@material-ui/core";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -22,7 +21,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: ["Goldman"],
-    h3:{fontSize:12},
+    h3: { fontSize: 12 },
     h4: {
       fontWeight: 400,
       fontSize: 28,
@@ -42,10 +41,11 @@ const styles = makeStyles({
     width: "100%",
     height: "100%",
     backgroundColor: "#082032",
+    background: "linear-gradient(0deg, rgba(1,100,120,0.5),transparent)",
   },
   hr: {
     display: "flex",
-    margin: "0 1rem",
+    margin: "0 0",
     backgroundColor: "#e3e3e3",
   },
   hr1: {
@@ -62,6 +62,7 @@ const styles = makeStyles({
     width: "60%",
     height: "50%",
     borderRadius: "10%",
+    display: "flex",
     justifyContent: "center",
     alignItems: "center",
     borderWidth: "5px",
@@ -96,6 +97,7 @@ const styles = makeStyles({
     marginBottom: "8%",
     marginLeft: "5%",
     marginRight: "5%",
+    alignItems: "center",
     textAlign: "center",
   },
 });
@@ -116,8 +118,12 @@ function Terms() {
             Terms and Conditions
           </Typography>
         </div>
-        <div className={classes.textbox}>
-          <Typography variant="h3" className={classes.typography} style={{display:'flex',textAlign:'left'}}>
+        <div className={classes.textbox} style={{ color: "#777777" }}>
+          <Typography
+            variant="h3"
+            className={classes.typography}
+            style={{ display: "flex", textAlign: "left" }}
+          >
             1.1 Introduction. Welcome to Ticket Depot's online ticket exchange
             (the "Application"). These Terms and Conditions (including any
             documents referred to in it) ("Agreement") list the terms of the

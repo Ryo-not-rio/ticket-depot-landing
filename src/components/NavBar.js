@@ -1,97 +1,107 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 import LogoFinalnoBground from "../LogoFinalnoBground.png";
 
 const styles = makeStyles({
-  li: { display: "flex", margin: "0 1rem" },
-  nav: {
+  li: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "right",
-    marginRight: "0.5rem",
+    justifyContent: "center",
+    width: "100%",
+  },
+  nav: {
     fontFamily: ["Goldman"],
+    flexDirection: "column",
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    
   },
   ul: {
     display: "flex",
-    margin: "25px",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "80%",
+    margin: "auto",
+    padding: "10px",
   },
   logo: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-    flexDirection: "row",
+    backgroundColor:"#082032"
   },
   link: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     color: "#e3e3e3",
     textDecoration: "none",
-    listStyle: "none",
+    fontSize: 13,
   },
-  togglebutton: {
-    position: "absolute",
-    top: "0.75rem",
-    right: "2rem",
-    display: "none",
-    flexDirection: "column",
-    justifyContent: "spaceBetween",
-    width: "31px",
-    height: "21px",
-  },
-  span: {
-    height: "100%",
+  Button: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: "20%",
+    transition: "background .3s, borderColor .3s, color .3s",
+    "&:hover": { backgroundColor: "#334756" },
     width: "100%",
-    backgroundColor: "#e3e3e3",
-    borderRadius: "10px",
-    borderTop: "10px",
-    borderBottom: "1px",
   },
 });
 
 function NavBar() {
   const classes = styles();
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+        backgroundColor:"#082032",
+        
+      }}
+    >
       <div
         style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "left",
-          flexDirection: "row",
-
-          width: "25%",
-          marginLeft: "1rem",
-          marginBottom: "-3.5rem",
+          width: "50%",
         }}
       >
-        <img className={classes.logo} src={LogoFinalnoBground} alt=""/>
+        <Link to="/">
+          <img className={classes.logo} src={LogoFinalnoBground} alt="" />
+        </Link>
       </div>
-      <nav className={classes.nav}>
+      <nav style={{ backgroundColor: "#082032" }} className={classes.nav}>
         <ul className={classes.ul}>
           <li className={classes.li}>
-            <Link className={classes.link} to="/">
-              Home
-            </Link>
+            <Button className={classes.Button}>
+              <Link className={classes.link} to="/About">
+                About
+              </Link>
+            </Button>
           </li>
           <li className={classes.li}>
-            <Link className={classes.link} to="/About">
-              About
-            </Link>
+            <Button className={classes.Button}>
+              <Link className={classes.link} to="/Contact">
+                Contact
+              </Link>
+            </Button>
           </li>
           <li className={classes.li}>
-            <Link className={classes.link} to="/Contact">
-              Contact
-            </Link>
-          </li>
-          <li className={classes.li}>
-            <Link
-              style={{ color: "#0d9116" }}
-              className={classes.link}
-              to="/Download"
-            >
-              Download
-            </Link>
+            <Button className={classes.Button}>
+              <Link
+                style={{ color: "#0d9116" }}
+                className={classes.link}
+                to="/Download"
+              >
+                Download
+              </Link>
+            </Button>
           </li>
         </ul>
       </nav>

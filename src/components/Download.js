@@ -12,7 +12,6 @@ import DownloadButtons from "../components/DownloadButtons";
 import AppSlightBorders from "../AppSlightBorders.png";
 import { Typography } from "@material-ui/core";
 
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -43,10 +42,11 @@ const styles = makeStyles({
     width: "100%",
     height: "100%",
     backgroundColor: "#082032",
+    background: "linear-gradient(0deg, rgba(1,100,120,0.5),transparent)",
   },
   hr: {
     display: "flex",
-    margin: "0 1rem",
+    margin: "0 0",
     backgroundColor: "#e3e3e3",
   },
 
@@ -97,7 +97,11 @@ function Download() {
         <hr className={classes.hr} />
 
         <div className={classes.textbox}>
-          <Typography variant="h4" className={classes.typography}>
+          <Typography
+            variant="h4"
+            style={{ color: "#e0c99d" }}
+            className={classes.typography}
+          >
             Download
             <Typography
               variant="h4"

@@ -41,10 +41,11 @@ const styles = makeStyles({
     width: "100%",
     height: "100%",
     backgroundColor: "#082032",
+    background: "linear-gradient(0deg, rgba(1,100,120,0.5),transparent)",
   },
   hr: {
     display: "flex",
-    margin: "0 1rem",
+    margin: "0 0",
     backgroundColor: "#e3e3e3",
   },
   hr1: {
@@ -119,7 +120,7 @@ function Privacy() {
           <Typography
             variant="h3"
             className={classes.typography}
-            style={{ display: "flex", textAlign: "left" }}
+            style={{ display: "flex", textAlign: "left", color: "#777777" }}
           >
             Please review this Privacy Policy, which sets out our policies
             regarding the collection, utilisation, and protection of the

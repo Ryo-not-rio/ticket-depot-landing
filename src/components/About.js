@@ -42,10 +42,11 @@ const styles = makeStyles({
     width: "100%",
     height: "100%",
     backgroundColor: "#082032",
+    background: "linear-gradient(0deg, rgba(1,100,120,0.5),transparent)",
   },
   hr: {
     display: "flex",
-    margin: "0 1rem",
+    margin: "0 0",
     backgroundColor: "#e3e3e3",
   },
 
@@ -129,28 +130,9 @@ const About = () => {
           <br />
           <Typography variant="h5">User rating system</Typography>
         </div>
-        <hr className={classes.hr1} />
-        <DownloadButtons />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginRight: "5%",
-            marginLeft: "5%",
-            marginTop: "8%",
-            marginBottom: "8%",
-          }}
-        >
-          <div className={classes.applogobox}>
-            <img
-              style={{ width: "70%", marginTop: "8%", marginBottom: "8%" }}
-              src={AppSlightBorders}
-              alt=""
-            />
-          </div>
-        </div>
 
+        <DownloadButtons />
+        <hr className={classes.hr1} />
         <div className={classes.textbox}>
           <Typography className={classes.typography}>
             Just download the app and sign up to start selling and/or buying
