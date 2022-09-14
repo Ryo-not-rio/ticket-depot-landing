@@ -74,8 +74,6 @@ const styles = makeStyles({
     borderWidth: "5px",
     border: "5px solid",
     borderColor: "#0d9116",
-    marginTop: "8%",
-    marginBottom: "8%",
   },
   logo: {
     display: "flex",
@@ -122,24 +120,14 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar />
         <hr className={classes.hr} />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginRight: "5%",
-            marginLeft: "5%",
-            marginTop: "8%",
-            marginBottom: "8%",
-          }}
-        >
-          <div className={classes.applogobox}>
-            <img
-              style={{ width: "70%", marginTop: "8%", marginBottom: "8%" }}
-              src={AppSlightBorders}
-              alt=""
-            />
-          </div>
+        <div className={classes.textbox}>
+          <Typography
+            style={{ color: "#e0c99d", marginTop: "8%" }}
+            variant="h4"
+            className={classes.typography}
+          >
+            Ticket Depot
+          </Typography>
         </div>
         <hr className={classes.hr1} />
         <div
@@ -217,7 +205,24 @@ function App() {
 
         <hr className={classes.hr1} />
         <DownloadButtons />
-
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginRight: "5%",
+            marginLeft: "5%",
+            marginBottom: "8%",
+          }}
+        >
+          <div className={classes.applogobox}>
+            <img
+              style={{ width: "70%", marginTop: "8%", marginBottom: "8%" }}
+              src={AppSlightBorders}
+              alt=""
+            />
+          </div>
+        </div>
         <hr className={classes.hr} />
         <div
           style={{

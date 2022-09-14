@@ -62,8 +62,6 @@ const styles = makeStyles({
     borderWidth: "5px",
     border: "5px solid",
     borderColor: "#0d9116",
-    marginTop: "8%",
-    marginBottom: "8%",
   },
   li: {
     textAlign: "center",
