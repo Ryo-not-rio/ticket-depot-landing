@@ -89,7 +89,7 @@ function Contact() {
         </div>
         <div className={classes.textbox}>
           <Typography className={classes.typography}>
-            Email: info@ticketdepot.co.uk
+            Email: support@ticketdepot.co.uk
             <br />
             <br />
             Instagram: @ticketdepot
